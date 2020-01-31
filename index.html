@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Uncial+Antiqua&display=swap" rel="stylesheet">
+    <title>Team</title>
+</head>
+<body>  
+    <div class="fixed-bg">
+            <div id = "mainWrapper"> 
+                <div id = "#section1" style="height: 100vh">
+                        <div id = "gameLogo">
+                                 LOGO
+                                 <p>Short description?????</p>
+                        </div>
+                                <div id="img-down">
+            
+                                        <a href="#section2"><img src="./assets/animated-arrow.gif" style="height: 200px; width: 200px;"></a>
+                        
+                                </div>
+                </div>
+                <div id="section2" style="height: 100vh">
+                        <div id="developersInfo w3-container w3-center w3-animate-opacity" style="color:snow;">
+                            
+                                <h1 style="padding-top:50px">Developers</h1>
+                                <br/>
+                                <br/>
+                                
+                                <div class="row" style="padding-top: 10%; ">
+                                    <div class="dev-content devBorder" >
+                                        <img src="./profilepics/mahesh.jpeg" height="150px" width="150px">
+                                        <br/>
+                                        <div class="devinfo" >
+                                                <h2>Ross Turner</h2>
+                                                <br>
+                                                ACM
+                                                <p>Short bio</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="dev-content devBorder">
+                                            <img src="./profilepics/mahesh.jpeg" height="150px" width="150px">
+                                            <br/>
+                                            <div class="devinfo">
+                                                    <h2>Mahesh Khanal</h2>
+                                                    <br>
+                                                    ICS
+                                                    <p>Short bio</p>
+                                                    <div class="social-media">
+
+                                                    </div>
+                                            </div>
+                                            
+
+                                    </div>
+                                    <div class="dev-content">
+                                            <img src="./profilepics/mahesh.jpeg" he ight="150px" width="150px">
+                                            <br/>
+                                            <div class="devinfo">
+                                                    <h2>James Hutchison</h2>
+                                                    <br>
+                                                    ICS
+                                                    <p>Short bio</p>
+                                            </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                        </div>
+                </div>
+                 
+                   
+                   
+                    
+            </div>
+           
+     
+            
+    </div>
+    
+    
+</body>
+</html>
+<style>
+    .devBorder{
+        border:0px; 
+        border-right: 1px; 
+        border-style:groove; 
+        border-color: rgba(255,255,255,0.5);
+    }
+    .devinfo{
+        text-align: center; 
+
+        
+    }
+    .devinfo h2{
+        color:yellow;
+    }
+    .dev-content img{
+        border-radius: 50%;  
+    }
+    .dev-content{
+        display: inline-block;
+        width:30%;
+    }
+    body{
+        font-family: 'Carrois Gothic SC', sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    .fixed-bg{
+        background-image: url("./assets/background.jpg"); 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        min-height: 100vh;
+    }
+    #mainWrapper{
+    background:#000;
+    overflow: scroll;
+    color:snow;
+    opacity:0.9;
+    position:fixed; /* important to use fixed, not absolute */
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align: center;
+    background-attachment: fixed;
+
+    z-index:9999; /* may not be necessary */
+    scroll-behavior: smooth;
+    }
+
+    #gameLogo{
+        font-family: 'Uncial Antiqua', cursive;
+        color:snow;
+        text-align: center;
+        font-size: 4em; 
+        padding-top:10%; 
+      
+    }
+
+    #gameLogo span{
+        font-size: 3em; 
+        color:yellow;
+        padding-bottom: 0px; 
+        margin-bottom: 0px; 
+    }
+    #gameLogo p{
+        font-size: 0.2em; 
+        padding:0px; 
+        margin:0px; 
+        position: relative;
+    }
+    
+   
+
+    #img-down {
+   height: 250px;
+   left: 50%;
+   margin-top: -125px;
+   margin-left: -125px;
+   position: absolute;
+   top: 70%;
+   width: 250px;
+   cursor: pointer;
+}
+
+#developersInfo{
+    height: 100vh;
+}
+
+ 
+</style>
+<script>
+var imgdiv = document.getElementById("img-down"); 
+imgdiv.addEventListener("click", function(){
+   // alert("clicked");
+})
+
+
+</script>
