@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -11,77 +12,117 @@
     <title>Team</title>
 </head>
 <body>  
-    <div class="fixed-bg">
+    <div class="fixed-bg container-fluid">
+    
             <div id = "mainWrapper"> 
-                <div id = "#section1" style="height: 100vh">
-                        <div id = "gameLogo">
-                                 LOGO
-                                 <p>Short description?????</p>
+                <div id="content">
+                        <div class="nav">
+                                <div class=" navitems row">
+                                  <a href="#section1">Home</a>
+                                  <a href="#section2">Our Games</a>
+                                  <a href="#section3">Developers</a>
+                                  <a href="#section4">Contact</a>
+                               </div>
+                                    
                         </div>
-                                <div id="img-down">
-            
-                                        <a href="#section2"><img src="animated-arrow.gif" style="height: 200px; width: 200px;"></a>
-                        
-                                </div>
-                </div>
-                <div id="section2" style="height: 100vh">
-                        <div id="developersInfo w3-container w3-center w3-animate-opacity" style="color:snow;">
+                        <div id = "section1" style="height: 100vh">
+                            <div class="row">
+                                    <div id = "gameLogo">
+                                            SHORT<span>F</span>USE
+                                            <div class="row">
+                                                <div class="col-md-4"></div>
+                                                <div class="col-md-4 gameDesc">
+                                                       <p>At Short Fuse, we have a single purpose.  We make games with stunning visuals that are explosively fun.  Although our fuse is short, we aim for the stars.  While the world of gaming may be getting smaller, we went big.  Our games are meant to be played on the largest screen you can possibly find.</p>
+                                                </div>
+                                                <div class="col-md-4"></div>
+                                            </div>
+                                   </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-4">
+                                            <div id="" style="padding-top: 10px; ">
+                    
+                                                    <a href="#section2"><img src="animated-arrow.gif" style="height: 200px; width: 200px;"></a>
+                                    
+                                            </div>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                    
+                            </div>
                             
-                                <h1 style="padding-top:50px">Developers</h1>
-                                <br/>
-                                <br/>
-                                
-                                <div class="row" style="padding-top: 10%; ">
-                                    <div class="dev-content devBorder" >
-                                        <img src="./profilepics/mahesh.jpeg" height="150px" width="150px">
-                                        <br/>
-                                        <div class="devinfo" >
+                                       
+                        </div>
+                        <div id = "section2" style="height: 100vh">
+                                <div class=" ourGames row" style="justify-content: center; padding-top: 10px;"> 
+                                        <h2>Our Games</h2>
+                                    </div>
+                                    <div class="row"  style="justify-content: center; padding-top: 15%">
+                                            <h1 style="font-size: 10em;">KAB<span>O</span><span>O</span>M</h1>
+                                     </div>
+                                     <div class="row">
+                                         <div class="col-md-4"></div>
+                                         <div class="col-md-4">                                         <p>Kaboom is an arcade style battle royal game for 2-4 players.  The action is fast paced and explosive.  Blow up the world, collect powerups, and slide bombs across the map to defeat your friends in the most epic ways imaginable.  There can be only one.</p>
+                                         </div>
+                                         <div class="col-md-4"></div>
+                                     </div>
+                                     <h1>Build in progress........</h1>
+                        </div>
+                        <div id="section3" style="height: 100vh">
+                            <div class="row" style="justify-content: center; padding-top: 10px;"> 
+                                <h2>Developers</h2>
+                            </div>
+                                <div class="row devinfo dev-content" style="margin-top: 15%; opacity: 1">
+                                        <div class="col-md-4 devBorder" >
+                                                <img src="./profilepics/ross.png" height="150px" width="150px" alt="default.jpeg">
+                                                <br/>
                                                 <h2>Ross Turner</h2>
                                                 <br>
-                                                ACM
-                                                <p>Short bio</p>
+                                                <div class="bio">
+                                                        <p>Ross is a Computer Animation and Japanese Major. Enjoys gaming when he can or has homework to do. Call of Duty and Tetris are the go-to’s.</p>
+                                                </div>
                                         </div>
-
-                                    </div>
-                                    <div class="dev-content devBorder">
-                                            <img src="./profilepics/mahesh.jpeg" height="150px" width="150px">
-                                            <br/>
-                                            <div class="devinfo">
-                                                    <h2>Mahesh Khanal</h2>
-                                                    <br>
-                                                    ICS
-                                                    <p>Short bio</p>
-                                                    <div class="social-media">
-
-                                                    </div>
-                                            </div>
-                                            
-
-                                    </div>
-                                    <div class="dev-content">
-                                            <img src="./profilepics/mahesh.jpeg" he ight="150px" width="150px">
-                                            <br/>
-                                            <div class="devinfo">
-                                                    <h2>James Hutchison</h2>
-                                                    <br>
-                                                    ICS
-                                                    <p>Short bio</p>
-                                            </div>
-                                    </div>
+                                        <div class="col-md-4 devBorder" >
+                                                <img src="./profilepics/mahesh.jpg" height="150px" width="150px">
+                                                <br/>
+                                                <h2>Mahesh Khanal</h2>
+                                                <br>
+                                                <div class="bio">
+                                                    <p>Mahesh has a BS in Computer Science and a Minor in Mathematics. He is now working towards his Masters in computer science at the University of Hawaiʻi at Mānoa.</p>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-4" >
+                                                <img src="./profilepics/james.jpg" height="150px" width="150px" alt="mahesh.jpeg" style="transform: rotate(-90deg);">
+                                                <br/>
+                                                <h2>James Hutchison</h2>
+                                                <br>
+                                                <div class="bio">
+                                                        <p> James is a Computer Science student at UH Manoa. When he’s not coding, he’s kiteboarding or surfing.</p>
+                                                </div>
+                                        </div>
                                 </div>
-
-
-
-
-
-
-
+        
+                          
                         </div>
+                        <div id = "section4" style="height: 100vh">
+                                <div class="row" style="justify-content: center; padding-top: 10px;"> 
+                                        <h2>Contact</h2>
+                                </div>
+                                <div id="map">
+                                    <div class="row" style="margin-top: 10%">
+                                        <div class="col-md-6">
+                                            <h3>Contact form to be added later...</h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8160.5521560164025!2d-157.81838358028224!3d21.30065373817328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006d98b11c6aff%3A0xcc6bcb7884caffcb!2sKeller%20Hall!5e1!3m2!1sen!2sus!4v1582162821359!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        
+                                        </div>
+                                    </div>
+        
+                                </div>
+                        </div>
+
                 </div>
-                 
-                   
-                   
-                    
             </div>
            
      
@@ -92,6 +133,28 @@
 </body>
 </html>
 <style>
+    #content{
+        z-index: 1000 !important;
+        opacity: 1;
+
+    }
+    .map {
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+    .gameDesc{
+        font-family: 'Carrois Gothic SC', sans-serif;   
+    }
+    #section2 .row span{
+        color: yellow; 
+    }
+    #section2 .row h1{
+        font-family: 'Uncial Antiqua', cursive;
+    }
+  
     .devBorder{
         border:0px; 
         border-right: 1px; 
@@ -100,22 +163,37 @@
     }
     .devinfo{
         text-align: center; 
-
-        
+    
     }
     .devinfo h2{
         color:yellow;
     }
     .dev-content img{
         border-radius: 50%;  
+        border:2px solid black;
     }
     .dev-content{
-        display: inline-block;
-        width:30%;
+        
     }
     body{
         font-family: 'Carrois Gothic SC', sans-serif;
         scroll-behavior: smooth;
+    }
+    .nav .navitems a{
+        text-decoration: none; 
+        padding:10px; 
+        color:snow;
+    }
+
+    .nav .navitems a:hover{
+        color:yellow;   
+    }
+    .nav .navitems{
+        padding:10px; 
+    }
+    .nav{
+        position: fixed;
+        padding-left: 5%; 
     }
 
     .fixed-bg{
@@ -130,7 +208,7 @@
     background:#000;
     overflow: scroll;
     color:snow;
-    opacity:0.9;
+    opacity:0.8;
     position:fixed; /* important to use fixed, not absolute */
     top:0;
     left:0;
@@ -138,10 +216,11 @@
     height:100%;
     text-align: center;
     background-attachment: fixed;
-
-    z-index:9999; /* may not be necessary */
     scroll-behavior: smooth;
+    z-index: 0;
     }
+
+
 
     #gameLogo{
         font-family: 'Uncial Antiqua', cursive;
