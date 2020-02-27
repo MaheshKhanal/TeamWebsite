@@ -9,20 +9,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Uncial+Antiqua&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_os0GxevWLF5uxKEkSSiP9");
+   })();
+</script>
     <title>Team</title>
 </head>
 <body>  
-    <div class="fixed-bg container-fluid">
-    
-            <div id = "mainWrapper"> 
+    <div id="mainWrapper"></div>
+    <div class="fixed-bg container-fluid">   
+            <div id = "mainBody"> 
                 <div id="content">
-                        <div class="nav">
+                        <div  id="navbar" class="nav" style="background-color:rgba(0,0,0,0.85)">
                                 <div class=" navitems row">
                                   <a href="#section1">Home</a>
                                   <a href="#section2">Our Games</a>
-                                  <a href="#section3">Developers</a>
-                                  <a href="#section4">Contact</a>
-                               </div>
+                                  <a href="#section3">Dev Blog</a>
+                                  <a href="#section4">Developers</a>
+                                  <a href="#section5">Contact</a>
+
+                                </div>
                                     
                         </div>
                         <div id = "section1" style="height: 100vh">
@@ -68,15 +76,24 @@
                                      </div>
                                      <h1>Build in progress........</h1>
                         </div>
-                        <div id="section3" style="height: 100vh">
+                        <div id = "section3" style="height: 100vh">
+                            <div class=" ourGames row" style="justify-content: center; padding-top: 10px;"> 
+                                    <h2>Dev Blog</h2>
+                                </div>
+                            <div>
+                                
+                            </div>
+                    </div>
+                        <div id="section4" style="height: 100vh">
                             <div class="row" style="justify-content: center; padding-top: 10px;"> 
                                 <h2>Developers</h2>
                             </div>
-                                <div class="row devinfo dev-content" style="margin-top: 15%; opacity: 1">
+                                <div class="row devinfo dev-content" style="margin-top: 15%;">
                                         <div class="col-md-4 devBorder" >
                                                 <img src="./profilepics/ross.png" height="150px" width="150px" alt="default.jpeg">
                                                 <br/>
                                                 <h2>Ross Turner</h2>
+                                                <h4>Designer</h4>
                                                 <br>
                                                 <div class="bio">
                                                         <p>Ross is a Computer Animation and Japanese Major. Enjoys gaming when he can or has homework to do. Call of Duty and Tetris are the go-to’s.</p>
@@ -86,6 +103,7 @@
                                                 <img src="./profilepics/mahesh.jpg" height="150px" width="150px">
                                                 <br/>
                                                 <h2>Mahesh Khanal</h2>
+                                                <h4>Programmer</h4>
                                                 <br>
                                                 <div class="bio">
                                                     <p>Mahesh has a BS in Computer Science and a Minor in Mathematics. He is now working towards his Masters in computer science at the University of Hawaiʻi at Mānoa.</p>
@@ -95,6 +113,7 @@
                                                 <img src="./profilepics/james.jpg" height="150px" width="150px" alt="mahesh.jpeg" style="transform: rotate(-90deg);">
                                                 <br/>
                                                 <h2>James Hutchison</h2>
+                                                <h4>Programmer</h4>
                                                 <br>
                                                 <div class="bio">
                                                         <p> James is a Computer Science student at UH Manoa. When he’s not coding, he’s kiteboarding or surfing.</p>
@@ -104,14 +123,30 @@
         
                           
                         </div>
-                        <div id = "section4" style="height: 100vh">
+                        <div id = "section5" style="height: 100vh">
                                 <div class="row" style="justify-content: center; padding-top: 10px;"> 
                                         <h2>Contact</h2>
                                 </div>
                                 <div id="map">
                                     <div class="row" style="margin-top: 10%">
-                                        <div class="col-md-6">
-                                            <h3>Contact form to be added later...</h3>
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-4">
+                                            <div class="container">
+                                                <h2>Send us a message...</h2>
+                                                <hr/>
+                                                    <form id="contactForm">
+                                                            Name
+                                                            <input type="text" class="form-control" name="from_name" placeholder="" required>
+                                                            Contact email
+                                                            <input type="email" class="form-control" name="from_email" placeholder="" required>
+                                                            Message
+                                                            <textarea class="form-control" id="" rows="3"   name="message_html"  required></textarea>
+                                                            <br/>
+                                                            <button type="submit" class="btn btn-primary">Send</button>
+                                                    </form>
+
+                                            </div>
+                                           
                                         </div>
                                         <div class="col-md-6">
                                                 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8160.5521560164025!2d-157.81838358028224!3d21.30065373817328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006d98b11c6aff%3A0xcc6bcb7884caffcb!2sKeller%20Hall!5e1!3m2!1sen!2sus!4v1582162821359!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -123,21 +158,11 @@
                         </div>
 
                 </div>
-            </div>
-           
-     
-            
-    </div>
-    
-    
+            </div>         
+    </div>  
 </body>
 </html>
 <style>
-    #content{
-        z-index: 1000 !important;
-        opacity: 1;
-
-    }
     .map {
     -webkit-filter: grayscale(100%);
        -moz-filter: grayscale(100%);
@@ -194,6 +219,7 @@
     .nav{
         position: fixed;
         padding-left: 5%; 
+        transition: top 0.3s;
     }
 
     .fixed-bg{
@@ -205,7 +231,6 @@
         min-height: 100vh;
     }
     #mainWrapper{
-    background:#000;
     overflow: scroll;
     color:snow;
     opacity:0.8;
@@ -219,6 +244,28 @@
     scroll-behavior: smooth;
     z-index: 0;
     }
+
+    #mainBody{
+    background:rgba(0,0,0,0.85);
+    overflow: scroll;
+    color:snow;
+    
+    position:fixed; /* important to use fixed, not absolute */
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align: center;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    z-index: 0;
+    animation: mymove 30s infinite;
+
+    }
+
+@keyframes mymove {
+  70% {background-color:rgba(0,0,0,0.95);}
+}
 
 
 
@@ -264,10 +311,36 @@
  
 </style>
 <script>
-var imgdiv = document.getElementById("img-down"); 
-imgdiv.addEventListener("click", function(){
-   // alert("clicked");
-})
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+<script>
+    var myform = $("#contactForm");
+    myform.submit(function(event){
+	event.preventDefault();
 
+  // Change to your service ID, or keep using the default service
+  var service_id = "default_service";
+  var template_id = "template_Rq5e65LY";
 
+  myform.find("button").text("Sending...");
+  emailjs.sendForm(service_id,template_id,myform[0])
+  	.then(function(){ 
+    	//alert("Sent!");
+       myform.find("button").text("Send");
+       window.location.reload();
+    }, function(err) {
+       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+       myform.find("button").text("Send");
+    });
+  return false;
+});
 </script>
